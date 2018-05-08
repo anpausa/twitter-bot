@@ -12,7 +12,7 @@ const AutoDM = () => {
   
   stream.on('tweet', function (tweet) {
    
-    if (tweet.user.screen_name == 'SenseofCents')
+    /*if (tweet.user.screen_name == 'SenseofCents')
     {
 
              T.post('favorites/create', {
@@ -240,7 +240,7 @@ const AutoDM = () => {
               }, (err, data, response) => {
                   console.log(`${data.text} from Home Timeline tweet RT!`);
               }); 
-    }
+    }*/
     
   });
  
@@ -383,10 +383,10 @@ const GenerateMessage = name => {
   ];
   const d = new Date();
   const dayName = days[d.getDay()];
-  const channelName = "https://parttimedime.com";
+  const channelName = "https://youtube.com/c/ANPAUS";
   //return `Hi ${name} Thanks for .... \n Happy ${dayName} 😊😊 `; // your message
   // My message   
-  return `Hello ${name} Thank you for joining my social media network. \n If you want to check out my blog click-> ${channelName} \n Happy to chat anytime 😊  \n Happy ${dayName} 😊😊 `;
+  return `Hey ${name} Thanks for joining my social media network ❤️❤️❤️❤️. \n If you want to check me out on Youtube click-> ${channelName} 🔥🔥🔥🔥🔥🔥\n Happy to chat anytime ❤️ \n Happy ${dayName} 🚀🚀🚀 `;
 };
 
 module.exports = AutoDM;
