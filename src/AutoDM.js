@@ -12,7 +12,7 @@ const AutoDM = () => {
   
   stream.on('tweet', function (tweet) {
    
-    /*if (tweet.user.screen_name == 'SenseofCents')
+    if (tweet.user.screen_name == 'markiplier')
     {
 
              T.post('favorites/create', {
@@ -29,7 +29,7 @@ const AutoDM = () => {
     
     }
     
-    if (tweet.user.screen_name == 'tess_wicks')
+    if (tweet.user.screen_name == 'anthonypadilla')
     {
 
              T.post('favorites/create', {
@@ -46,7 +46,7 @@ const AutoDM = () => {
     
     }
     
-    if (tweet.user.screen_name == 'FITnancials')
+    if (tweet.user.screen_name == 'MarziaPie')
     {
 
              T.post('favorites/create', {
@@ -63,7 +63,7 @@ const AutoDM = () => {
     
     }
     
-    if (tweet.user.screen_name == 'followprojecten')
+    if (tweet.user.screen_name == 'pewdiepie')
     {
 
              T.post('favorites/create', {
@@ -80,7 +80,7 @@ const AutoDM = () => {
     
     }
     
-     if (tweet.user.screen_name == 'RunZwithDooBiEs')
+     if (tweet.user.screen_name == 'rizickyusuph1')
     {
 
              T.post('favorites/create', {
@@ -97,7 +97,7 @@ const AutoDM = () => {
     
     }
     
-    if (tweet.user.screen_name == 'RamIsRising')
+    if (tweet.user.screen_name == 'Tee_Mct')
     {
 
              T.post('favorites/create', {
@@ -116,7 +116,7 @@ const AutoDM = () => {
     
     
      
-    if (tweet.user.screen_name == 'CandySlimeAsmr')
+    if (tweet.user.screen_name == 'jbieberrhelp')
     {
 
              T.post('favorites/create', {
@@ -133,7 +133,7 @@ const AutoDM = () => {
     
     }
     
-       if (tweet.user.screen_name == 'WriterB2b')
+       if (tweet.user.screen_name == 'trevorprosper')
     {
 
              T.post('favorites/create', {
@@ -150,7 +150,7 @@ const AutoDM = () => {
     
     }
     
-    if (tweet.user.screen_name == 'ganseyman')
+    if (tweet.user.screen_name == 'SimpleGain')
     {
 
              T.post('favorites/create', {
@@ -167,7 +167,7 @@ const AutoDM = () => {
     
     }
     
-    if (tweet.user.screen_name == 'projetofftricqk')
+    if (tweet.user.screen_name == 'Gain1DDrive')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -182,7 +182,7 @@ const AutoDM = () => {
               }); 
     }
     
-    if (tweet.user.screen_name == 'CammyDJ777')
+    if (tweet.user.screen_name == 'arian_FOLLOW')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -212,7 +212,7 @@ const AutoDM = () => {
               }); 
     }
    
-    if (tweet.user.screen_name == 'decorartehogar')
+    if (tweet.user.screen_name == 'pcgamer')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -227,7 +227,7 @@ const AutoDM = () => {
               }); 
     }
     
-    if (tweet.user.screen_name == 'Mystik_Justice')
+    if (tweet.user.screen_name == 'BTScures')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -240,7 +240,7 @@ const AutoDM = () => {
               }, (err, data, response) => {
                   console.log(`${data.text} from Home Timeline tweet RT!`);
               }); 
-    }*/
+    }
     
   });
  
