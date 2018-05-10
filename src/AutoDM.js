@@ -80,7 +80,7 @@ const AutoDM = () => {
     
     }
     
-     if (tweet.user.screen_name == 'rizickyusuph1')
+     if (tweet.user.screen_name == 'TwitchShare')
     {
 
              T.post('favorites/create', {
@@ -97,7 +97,7 @@ const AutoDM = () => {
     
     }
     
-    if (tweet.user.screen_name == 'Tee_Mct')
+    if (tweet.user.screen_name == 'TwitchRetweetsU')
     {
 
              T.post('favorites/create', {
@@ -116,7 +116,7 @@ const AutoDM = () => {
     
     
      
-    if (tweet.user.screen_name == 'jbieberrhelp')
+    if (tweet.user.screen_name == 'TwitchRetweetr')
     {
 
              T.post('favorites/create', {
@@ -133,7 +133,7 @@ const AutoDM = () => {
     
     }
     
-       if (tweet.user.screen_name == 'trevorprosper')
+       if (tweet.user.screen_name == 'TwitchSharing')
     {
 
              T.post('favorites/create', {
@@ -150,7 +150,7 @@ const AutoDM = () => {
     
     }
     
-    if (tweet.user.screen_name == 'SimpleGain')
+    if (tweet.user.screen_name == 'Retweet_Twitch')
     {
 
              T.post('favorites/create', {
@@ -167,22 +167,7 @@ const AutoDM = () => {
     
     }
     
-    if (tweet.user.screen_name == 'Gain1DDrive')
-    {
-             T.post('favorites/create', {
-                id: tweet.id_str
-              }, (err, data, response) => {
-                  console.log(`${data.text} from HomeTimeline tweet liked!`);
-              });
-
-               T.post('statuses/retweet/:id', {
-                id: tweet.id_str
-              }, (err, data, response) => {
-                  console.log(`${data.text} from Home Timeline tweet RT!`);
-              }); 
-    }
-    
-    if (tweet.user.screen_name == 'arian_FOLLOW')
+    if (tweet.user.screen_name == 'twitchtvhost')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -197,7 +182,22 @@ const AutoDM = () => {
               }); 
     }
     
-    if (tweet.user.screen_name == 'MarketWatch')
+    if (tweet.user.screen_name == 'SupStreamers')
+    {
+             T.post('favorites/create', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from HomeTimeline tweet liked!`);
+              });
+
+               T.post('statuses/retweet/:id', {
+                id: tweet.id_str
+              }, (err, data, response) => {
+                  console.log(`${data.text} from Home Timeline tweet RT!`);
+              }); 
+    }
+    
+    if (tweet.user.screen_name == 'StreamerStudio')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -227,7 +227,7 @@ const AutoDM = () => {
               }); 
     }
     
-    if (tweet.user.screen_name == 'BTScures')
+    if (tweet.user.screen_name == 'share_stream')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
@@ -384,9 +384,10 @@ const GenerateMessage = name => {
   const d = new Date();
   const dayName = days[d.getDay()];
   const channelName = "https://youtube.com/c/ANPAUS";
+  const twitchName = "https://twitch.tv/anpaus";
   //return `Hi ${name} Thanks for .... \n Happy ${dayName} 😊😊 `; // your message
   // My message   
-  return `Hey ${name} Thanks for joining my social media network ❤️❤️❤️❤️. \n If you want to check me out on Youtube click-> ${channelName} 🔥🔥🔥🔥🔥🔥\n Happy to chat anytime ❤️ \n Happy ${dayName} 🚀🚀🚀 `;
+  return `Hey ${name} Thanks for joining my social media network ❤️. \n If you want to check me out on \n Youtube click-> ${channelName} 🔥\n Happy to chat anytime ❤️ \n Happy ${dayName} 🚀🚀🚀 `;
 };
 
 module.exports = AutoDM;
