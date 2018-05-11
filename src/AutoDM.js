@@ -242,7 +242,7 @@ const AutoDM = () => {
               }); 
     }
     
-     if (tweet.user.screen_name == 'pawelterlecki')
+     if (tweet.user.screen_name == 'crucefydsreign')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
