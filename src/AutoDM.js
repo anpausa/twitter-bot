@@ -452,7 +452,7 @@ const GenerateMessage = name => {
   const twitchName = "https://twitch.tv/anpaus";
   //return `Hi ${name} Thanks for .... \n Happy ${dayName} 😊😊 `; // your message
   // My message   
-  return `Hey ${name} Thanks for joining my social media network ❤️. \n If you want to check me out on \n Youtube click-> ${channelName} 🔥\n Happy to chat anytime ❤️ \n Happy ${dayName} 🚀🚀🚀 `;
+  return `Hey ${name} Thanks for joining my social media network ❤️. \n If you want to check me out on \n Twitch click-> ${twitchName} 🔥\n Happy to chat anytime ❤️ \n Happy ${dayName} 🚀🚀🚀 `;
 };
 
 module.exports = AutoDM;
