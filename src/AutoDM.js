@@ -381,11 +381,11 @@ const SendMessage = user => {
         });
     });*/
     
-    /*T.post('friendships/create', {
+    T.post('friendships/create', {
             screen_name: handle
           }, (err, data, response) => {
               console.log(`${screen_name} followed back!`);
-          });*/
+          });
     
     /*T.get('statuses/user_timeline', {
     screen_name: handle,
