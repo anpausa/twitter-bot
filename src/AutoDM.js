@@ -271,7 +271,7 @@ const AutoDM = () => {
               }); 
     }
     
-    if (tweet.user.screen_name == 'ytpromoter4u')
+    if (tweet.user.screen_name == 'CoDWWIIScrims')
     {
              T.post('favorites/create', {
                 id: tweet.id_str
