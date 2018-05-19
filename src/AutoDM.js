@@ -34,7 +34,7 @@ const AutoDM = () => {
   
   stream.on('tweet', function (tweet) {
    
-    if (tweet.user.screen_name == 'markiplier')
+    if (tweet.user.screen_name == 'PromoteGamers')
     {
 
              /*T.post('favorites/create', {
@@ -51,7 +51,7 @@ const AutoDM = () => {
     
     }
     
-    if (tweet.user.screen_name == 'anthonypadilla')
+    if (tweet.user.screen_name == 'WalkOnWarriors')
     {
 
               /*T.post('favorites/create', {
