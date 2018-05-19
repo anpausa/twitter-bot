@@ -10,6 +10,28 @@ const AutoDM = () => {
   console.log("Start Sending Auto Direct Message 🚀🚀🚀" + my_user_name);
   stream.on("follow", SendMessage);
   
+  const stream2 = T.stream('statuses/filter', { track: '@wwwanpaus', language: 'en' })
+
+  stream2.on('tweet', function (tweet) {
+    T.get('friendships/lookup', {
+        screen_name: tweet.user.screen_name
+    }, (err, data, response) => {
+         console.log(data);
+         data.forEach(t => {
+            t.connections.forEach(a => {
+              if (a == "followed_by")
+              {
+                 T.post('statuses/retweet/:id', {
+                      id: tweet.id_str
+                  }, (err, data, response) => {
+                      console.log(`🚀🚀🚀 ${data.text} AS it was tagged ME tweet RT!`);
+                  });
+              }
+            });
+         });
+    });
+  });
+  
   stream.on('tweet', function (tweet) {
    
     if (tweet.user.screen_name == 'markiplier')
