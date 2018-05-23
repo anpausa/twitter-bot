@@ -68,7 +68,7 @@ const AutoDM = () => {
     
     }
     
-    if (tweet.user.screen_name == 'MarziaPie')
+    if (tweet.user.screen_name == 'IconRTs')
     {
 
               /*T.post('favorites/create', {
